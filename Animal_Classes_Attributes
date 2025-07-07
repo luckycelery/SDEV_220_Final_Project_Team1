@@ -1,0 +1,81 @@
+
+# Animal Classes and their different attributes
+class Animal:
+    def __init__(self, name, breed, weight, microchip_number, health_notes, description):
+        self.animal_type = "animal"
+        self.name = name
+        self.breed = breed
+        self.weight = weight
+        self.microchip_number = microchip_number
+        self.health_notes = health_notes
+        self.description = description
+    
+    def display_info(self):
+        print(f"Animal Type: {self.animal_type}")
+        print(f"Name: {self.name}")
+        print(f"Breed: {self.breed}")
+        print(f"Weight: {self.weight} lb")
+        print(f"Microchip Number: {self.microchip_number}")
+        print(f"Health Notes: {self.health_notes}")
+        print(f"Description: {self.description}")
+        print("-" * 50)
+
+# Subclasses that inherit from Animal
+class Cat(Animal):
+    def __init__(self, name, breed, weight, microchip_number, health_notes, description):
+        super().__init__(name, breed, weight, microchip_number, health_notes, description)
+        self.animal_type = "cat"
+
+class Dog(Animal):
+    def __init__(self, name, breed, weight, microchip_number, health_notes, description):
+        super().__init__(name, breed, weight, microchip_number, health_notes, description)
+        self.animal_type = "dog"
+
+class Exotic(Animal):
+    def __init__(self, name, breed, weight, microchip_number, health_notes, description):
+        super().__init__(name, breed, weight, microchip_number, health_notes, description)
+        self.animal_type = "exotic"
+
+# ---------------------------------------------
+print("Welcome to Almost Home Humane Society!")
+
+# Create a list to store multiple animal objects
+animals = []
+
+# Repeatedly prompt the user for animal information
+while True:
+    animal_type = input("\nEnter the type of animal (cat, dog, exotic) or 'q' to quit: ").strip().lower()
+
+    if animal_type == 'q':
+        break
+
+    name = input("Enter the name of the animal: ")
+    breed = input("Enter the breed of the animal: ")
+    weight = input("Enter the weight of the animal (lb): ")
+    microchip_number = input("Enter the microchip number of the animal: ")
+    health_notes = input("Enter any health information for the animal: ")
+    description = input("Enter a description of the animal: ")
+
+    # Determine the type of animal and create an instance
+    if animal_type == "cat":
+        animal_instance = Cat(name, breed, weight, microchip_number, health_notes, description)
+    elif animal_type == "dog":
+        animal_instance = Dog(name, breed, weight, microchip_number, health_notes, description)
+    elif animal_type == "exotic":
+        animal_instance = Exotic(name, breed, weight, microchip_number, health_notes, description)
+    else:
+        print("Unknown animal type. Defaulting to generic Animal.")
+        animal_instance = Animal(name, breed, weight, microchip_number, health_notes, description)
+
+    animals.append(animal_instance)
+    print("Animal added successfully!")
+
+# ---------------------------------------------
+# Display all animals collected
+
+if animals:
+    print("\nHere is the patient summary of all animals. Thank you for working with Almost Home Humane Society:\n")
+    for animal in animals:
+        animal.display_info()
+else:
+    print("\nNo animals were entered.")
