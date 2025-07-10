@@ -1,5 +1,6 @@
 
 # Animal Classes and their different attributes
+#needs to have DOB added to list of arguments and reflected accordingly 
 class Animal:
     def __init__(self, name, breed, weight, microchip_number, health_notes, description):
         self.animal_type = "animal"
@@ -20,11 +21,14 @@ class Animal:
         print(f"Description: {self.description}")
         print("-" * 50)
 
-# Subclasses that inherit from Animal
+# Subclasses that inherit from Animal -->
+#  we can simplify these chunks of code by using:def __init__(self, *args, **kwards): AND 
+# super().__init__(*args, **kwargs, animal_type="cat") ; and each type changes accordign to subclass
 class Cat(Animal):
     def __init__(self, name, breed, weight, microchip_number, health_notes, description):
         super().__init__(name, breed, weight, microchip_number, health_notes, description)
         self.animal_type = "cat"
+
 
 class Dog(Animal):
     def __init__(self, name, breed, weight, microchip_number, health_notes, description):
@@ -48,8 +52,10 @@ while True:
 
     if animal_type == 'q':
         break
-
-    name = input("Enter the name of the animal: ")
+#add some input validation testing (if there is time) to make sure that required fields are filled out
+#i.e. name cannot be null, breed cannot be null, makign sure type is a valid type, making sure weight is numerical
+#allowing microchip field to be null, etc.
+    name = input("Enter the name of the animal: ") #null = 
     breed = input("Enter the breed of the animal: ")
     weight = input("Enter the weight of the animal (lb): ")
     microchip_number = input("Enter the microchip number of the animal: ")
