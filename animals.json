@@ -1,0 +1,50 @@
+[
+  {
+    "type": "cat",
+    "name": "Geraldine",
+    "gender": "F",
+    "breed": "Domestic Short Hair",
+    "weight": "9",
+    "dob": "2018-02-12",
+    "microchip": "123456789",
+    "health_notes": "Has asthma",
+    "description": "best if in home with no other pets, not child friendly",
+    "image_path": "C:/Users/Admin/Downloads/20250129_134334.jpg"
+  },
+  {
+    "type": "cat",
+    "name": "Tsuko",
+    "gender": "M",
+    "breed": "Domestic Long Hair",
+    "weight": "14",
+    "dob": "2022-05-22",
+    "microchip": "987654321",
+    "health_notes": "had surgery to remove obstruction in bowel",
+    "description": "very friendly to humans, takes time to warm up to people, good for homes with other friendly cats and dogs",
+    "image_path": "C:/Users/Admin/Downloads/20250129_134334 (1).jpg"
+  },
+  {
+    "type": "dog",
+    "name": "Luna",
+    "gender": "F",
+    "breed": "Rottweiler Mix",
+    "weight": "45",
+    "dob": "2022-02-16",
+    "microchip": "24681012",
+    "health_notes": "up to date on shots, has had kennel cough in the past",
+    "description": "Very friendly and energetic, perfect for families with children and other pets",
+    "image_path": "C:/Users/Admin/Downloads/20241101_140553.jpg"
+  },
+  {
+    "type": "exotic",
+    "name": "Rhubarb",
+    "gender": "M",
+    "breed": "Lionhead",
+    "weight": "6",
+    "dob": "2019-01-01",
+    "microchip": "12108642",
+    "health_notes": "very healthy, up to date of vaccines",
+    "description": "very friendly and social, perfect for a family with children",
+    "image_path": ""
+  }
+]
