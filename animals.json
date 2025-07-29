@@ -9,7 +9,7 @@
     "microchip": "123456789",
     "health_notes": "Has asthma",
     "description": "best if in home with no other pets, not child friendly",
-    "image_path": "C:/Users/Admin/Downloads/20250129_134334.jpg"
+    "image_path": "C:/Users/Admin/OneDrive/Desktop/SDEV_220_Final_Project_Team1/20250129_134334.jpg"
   },
   {
     "type": "cat",
@@ -21,7 +21,7 @@
     "microchip": "987654321",
     "health_notes": "had surgery to remove obstruction in bowel",
     "description": "very friendly to humans, takes time to warm up to people, good for homes with other friendly cats and dogs",
-    "image_path": "C:/Users/Admin/Downloads/20250129_134334 (1).jpg"
+    "image_path": "C:/Users/Admin/OneDrive/Desktop/SDEV_220_Final_Project_Team1/20250129_134334 (1).jpg"
   },
   {
     "type": "dog",
@@ -33,7 +33,7 @@
     "microchip": "24681012",
     "health_notes": "up to date on shots, has had kennel cough in the past",
     "description": "Very friendly and energetic, perfect for families with children and other pets",
-    "image_path": "C:/Users/Admin/Downloads/20241101_140553.jpg"
+    "image_path": "C:/Users/Admin/OneDrive/Desktop/SDEV_220_Final_Project_Team1/20241101_140553.jpg"
   },
   {
     "type": "exotic",
