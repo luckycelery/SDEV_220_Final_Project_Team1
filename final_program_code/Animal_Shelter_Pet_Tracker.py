@@ -18,9 +18,6 @@
         - Pillow (PIL)       : Image handling for pet profiles
         - messagebox, Toplevel, filedialog :UI extensions from tkinter 
 
-    License     :
-        MIT License (or specify another if required)
-
 ===============================================================================
 """
 # =============================================================================
